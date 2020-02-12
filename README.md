@@ -7,19 +7,19 @@ Trabajo 2º Trimestre D.I.W
 
 * Se incluyen los siguientes componentes:
 
-* Collapse
-* Breadcrumb
-* Botones
+* Collapse :heavy_check_mark:
+* Breadcrumb 
+* Botones :heavy_check_mark:
 * Grupo de botones
-* Dropdown
-* Nav
-* NavBar
-* Badges
-* Alertas
-* Carousel
+* Dropdown :heavy_check_mark:
+* Nav :heavy_check_mark:
+* NavBar :heavy_check_mark:
+* Badges :heavy_check_mark:
+* Alertas :heavy_check_mark:
+* Carousel :heavy_check_mark:
 * Card
 * Jumbotron
-* Iconos soportados por bootstrap.
+* Iconos soportados por bootstrap. :heavy_check_mark:
 
 * Se incluyen las siguientes funcionalidades:
 
