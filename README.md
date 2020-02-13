@@ -18,7 +18,7 @@ Trabajo 2º Trimestre D.I.W
 * Alertas :heavy_check_mark:
 * Carousel :heavy_check_mark:
 * Card
-* Jumbotron
+* Jumbotron :heavy_check_mark:
 * Iconos soportados por bootstrap. :heavy_check_mark:
 
 * Se incluyen las siguientes funcionalidades:
