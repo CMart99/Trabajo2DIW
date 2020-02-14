@@ -19,7 +19,7 @@ Trabajo 2º Trimestre D.I.W
 * Carousel :heavy_check_mark:
 * Jumbotron :heavy_check_mark:
 * Forms :heavy_check_mark:
-* Validación de forms 
+* Validación de forms :heavy_check_mark:
 * Input Group 
 * Modal :heavy_check_mark:
 * Tooltip :heavy_check_mark:
@@ -84,11 +84,23 @@ Trabajo 2º Trimestre D.I.W
 * Validación de forms
 * Input Group
 * Modal :heavy_check_mark:
-* Tooltip
-* PopOver
-* Progress
-* Media Object
+* Tooltip 
+* PopOver 
+* Progress 
+* Media Object 
 
 * Se incluyen las siguientes funcionalidades:
 
+# Página de registro (register.html)
+
+* Collapse :heavy_check_mark:
+* Breadcrumb :heavy_check_mark:
+* Botones :heavy_check_mark:
+* Grupo de botones
+* Dropdown :heavy_check_mark:
+* Nav :heavy_check_mark:
+* NavBar :heavy_check_mark:
+* Badges :heavy_check_mark:
+* Alertas :heavy_check_mark:
+* Validación de forms :heavy_check_mark:
 
