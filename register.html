@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Register - Electronics4All</title>
+
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-home"></i> Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping.html">
+                        Shop
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="social.html">
+                        Social
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-envelope-o">
+                            <span class="badge badge-info">11</span>
+                        </i> Messages
+                    </a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb bg-light">
+        <a class="breadcrumb-item" href="index.html">Home</a>
+        <a class="breadcrumb-item" href="#">Shop</a>
+        <a class="breadcrumb-item" href="login.html">Login</a>
+        <a class="breadcrumb-item active" href="#">Register</a>
+    </nav>
+
+    <div class="container mt-2 mb-4">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-4 border border-primary shadow rounded pt-2">
+                <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
+                <div class="col-sm-12">
+                    <form method="post" id="singnupFrom" onSubmit="return validation();">
+                        <div class="form-group">
+                            <label class="font-weight-bold">Email</label>
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email">
+                                <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope"></i></button></div>
+                            </div>
+                        </div>
+                        <div id="next-form" class="collapse">
+                            <div class="form-group">
+                                <label class="font-weight-bold">User Name <small class="text-danger"><em>This will be
+                                            your login name!</em></small></label>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Choose your user name">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Phone #</label>
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="(000)-(0000000)">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Confirm Password</label>
+                                <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="***********">
+                                <em id="cp"></em>
+                            </div>
+                            <div class="form-group">
+                                <label><input type="checkbox" name="condition" id="condition"> I agree with the <a
+                                        href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" value="Sign Up" class="btn btn-block btn-danger">
+                            </div>
+                            <div class="container">
+                                <h3>Upload a photo</h3>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="file01">
+                                        <label class="custom-file-label" for="file01">Choose file</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--/.next-form-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function emailCheck() {
+            if ($("#email").val() == "") {
+                $("#email").addClass('is-invalid');
+                return false;
+            } else {
+                var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
+                if (regMail.test($("#email").val()) == false) {
+                    $("#email").addClass('is-invalid');
+                    return false;
+                } else {
+                    $("#email").removeClass('is-invalid');
+                    $('#next-form').collapse('show');
+                }
+
+            }
+        }
+
+        function validation() {
+            if ($("#username, #phone, #password, #cpassword").val() == "") {
+                $("#username, #phone, #password, #cpassword").addClass('is-invalid');
+                return false;
+            } else {
+                $("#username, #phone, #password, #cpassword").removeClass('is-invalid');
+            }
+
+            if ($("#password").val() != $("#cpassword").val()) {
+                $("#cpassword").addClass('is-invalid');
+                $("#cp").html('<span class="text-danger">Password and confirm password not matched!</span>');
+                return false;
+            }
+        }
+        $(document).ready(function(e) {
+            $("#username").on("keyup", function() {
+                if ($("#username").val() == "") {
+                    $("#username").addClass('is-invalid');
+                    return false;
+                } else {
+                    $("#username").removeClass('is-invalid');
+                }
+            });
+            $("#phone").on("keyup", function() {
+                if ($("#phone").val() == "") {
+                    $("#phone").addClass('is-invalid');
+                    return false;
+                } else {
+                    $("#phone").removeClass('is-invalid');
+                }
+            });
+            $("#password").on("keyup", function() {
+                if ($("#password").val() == "") {
+                    $("#password").addClass('is-invalid');
+                    return false;
+                } else {
+                    $("#password").removeClass('is-invalid');
+                }
+            });
+            $("#cpassword").on("keyup", function() {
+                if ($("#cpassword").val() == "") {
+                    $("#cpassword").addClass('is-invalid');
+                    return false;
+                } else {
+                    $("#cpassword").removeClass('is-invalid');
+                }
+            });
+        });
+    </script>
+</body>
+
+<!-- Footer -->
+
+<footer class="footer pt-5 mt-5 pb-4 bg-dark text-white" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
+                <p class="mb-4">Etiam laoreet in ex quis efficitur.</p>
+                <ul class="f-address">
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Address:</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="far fa-envelope"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Have any questions?</h6>
+                                <p><a href="#">Support@userthemes.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Address:</h6>
+                                <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">FRESH TWEETS</h5>
+                <ul class="f-address">
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fab fa-twitter"></i></div>
+                            <div class="col-10">
+                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <label>10 Mins Ago</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fab fa-twitter"></i></div>
+                            <div class="col-10">
+                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <label>10 Mins Ago</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fab fa-twitter"></i></div>
+                            <div class="col-10">
+                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <label>10 Mins Ago</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
+                <ul class="recent-post">
+                    <li>
+                        <label class="mr-3">28 <br><span>APR</span></label>
+                        <span>Rendomised words which dont look eveable.</span>
+                    </li>
+                    <li>
+                        <label class="mr-3">29 <br><span>APR</span></label>
+                        <span>Rendomised words which dont look eveable.</span>
+                    </li>
+                    <li>
+                        <label class="mr-3">30 <br><span>APR</span></label>
+                        <span>Rendomised words which dont look eveable.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your Email Address">
+                    <span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
+                </div>
+                <ul class="social-pet mt-4">
+                    <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm" data-dismiss="alert" aria-label="Close">
+        I agree
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
+
+<!-- Copyright -->
+<section class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="text-center text-white">
+                    &copy; 2020 Electronics4All. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

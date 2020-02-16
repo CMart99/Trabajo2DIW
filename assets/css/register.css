@@ -1,10 +1,3 @@
-/** MAIN BODY **/
-
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
-
 /** NAVBAR **/
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -115,238 +108,124 @@ body {
 }
 
 
-/** LINKS **/
+/** REGISTER CONTAINER **/
 
-a:active {
-    padding-top: 2px;
+.register {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 3%;
+    padding: 3%;
 }
 
-a:visited {
-    border-bottom: 2px solid;
-    padding: 3px;
-    text-decoration: none;
-}
-
-a:focus {
-    border-bottom: 2px solid;
-    text-decoration: none;
-}
-
-.link-white {
-    border-bottom: 2px solid;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.link-white:hover {
-    color: #bdc3c7;
-    text-decoration: none;
-}
-
-.jumbotron-dark-alt {
-    background-color: #333;
-    color: #fff;
-}
-
-@media (min-width: 1200px) {
-    .form-inline .input-group {
-        width: 300px;
-        margin-left: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar .dropdown-menu.form-wrapper {
-        width: 100%;
-        padding: 10px 15px;
-        background: transparent;
-        border: none;
-    }
-    .navbar .form-inline {
-        display: block;
-    }
-    .navbar .input-group {
-        width: 100%;
-    }
-    .navbar .nav .btn-primary,
-    .navbar .nav .btn-primary:active {
-        display: block;
-    }
-}
-
-
-/** **/
-
-h2 {
-    color: #000;
-    font-size: 26px;
-    font-weight: 300;
+.register-left {
     text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    margin: 30px 0 80px;
+    color: #fff;
+    margin-top: 4%;
 }
 
-h2 b {
-    color: #ffc000;
+.register-left input {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
 }
 
-h2::after {
-    content: "";
+.register-right {
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.register-left p {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+
+.register .register-form {
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs .nav-link {
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active {
     width: 100px;
-    position: absolute;
-    margin: 0 auto;
-    height: 4px;
-    background: rgba(0, 0, 0, 0.2);
-    left: 0;
-    right: 0;
-    bottom: -20px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
-
-/** CAROUSEL **/
-
-.carousel {
-    margin: 50px auto;
-    padding: 0 70px;
-}
-
-.carousel .item {
-    min-height: 330px;
+.register-heading {
     text-align: center;
-    overflow: hidden;
-}
-
-.carousel .item .img-box {
-    height: 160px;
-    width: 100%;
-    position: relative;
-}
-
-.carousel .item img {
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-
-.carousel .item h4 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.carousel .item .btn {
-    color: #333;
-    border-radius: 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: none;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    margin-top: 5px;
-    line-height: 16px;
-}
-
-.carousel .item .btn:hover,
-.carousel .item .btn:focus {
-    color: #fff;
-    background: #000;
-    border-color: #000;
-    box-shadow: none;
-}
-
-.carousel .item .btn i {
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-.carousel .thumb-wrapper {
-    text-align: center;
-}
-
-.carousel .thumb-content {
-    padding: 15px;
-}
-
-.carousel .carousel-control {
-    height: 100px;
-    width: 40px;
-    background: none;
-    margin: auto 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.carousel .carousel-control i {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    margin: -16px 0 0 0;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    color: rgba(0, 0, 0, 0.8);
-    text-shadow: none;
-    font-weight: bold;
-}
-
-.carousel .item-price {
-    font-size: 13px;
-    padding: 2px 0;
-}
-
-.carousel .item-price strike {
-    color: #999;
-    margin-right: 5px;
-}
-
-.carousel .item-price span {
-    color: #86bd57;
-    font-size: 110%;
-}
-
-.carousel .carousel-control.left i {
-    margin-left: -3px;
-}
-
-.carousel .carousel-control.left i {
-    margin-right: -3px;
-}
-
-.carousel .carousel-indicators {
-    bottom: -50px;
-}
-
-.carousel-indicators li,
-.carousel-indicators li.active {
-    width: 1em;
-    height: 0.00005em;
-    margin: 4px;
-    border-radius: 100%;
-    border-color: transparent;
-}
-
-.carousel-indicators li {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.carousel-indicators li.active {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.star-rating li {
-    padding: 0;
-}
-
-.star-rating i {
-    font-size: 14px;
-    color: #ffc000;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
 }
 
 
