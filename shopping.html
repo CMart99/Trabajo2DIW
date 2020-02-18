@@ -7,16 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/cookiealert.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <title>Shop - Electronics4All</title>
 </head>
@@ -24,7 +18,6 @@
 <body>
 
     <!-- NAV -->
-    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
     <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +26,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <i class="fa fa-home"></i> Home
-                        <span class="sr-only">(current)</span>
+                        <i class="fa fa-home" onclick="window.location.href='index.html'"></i>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="shopping.html">
                         Shop
                     </a>
@@ -51,13 +43,13 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Other sites
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="login.html">Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="register.html">Register</a>
+
                     </div>
                 </li>
             </ul>
@@ -76,8 +68,60 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
+        <!-- LOGIN MODAL -->
 
+        <button type="button" class="btn btn-primary btn-md ml-5 " data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="Click here to log in with your account" data-target="#ModalLoginForm">
+            Login
+        </button>
+        <div id="ModalLoginForm" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" method="POST" action="">
+                            <input type="hidden" name="_token" value="">
+                            <div class="form-group">
+                                <label class="control-label">E-Mail Address</label>
+                                <div>
+                                    <input type="email" class="form-control input-lg" name="email" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <div>
+                                    <input type="password" class="form-control input-lg" name="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="checkbox">
+                                        <label>
+                                    <input type="checkbox" name="remember"> Remember Me
+                                </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <button type="submit" class="btn btn-success">Login</button>
 
+                                    <a class="btn btn-link" href="">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <button type="button" class="btn btn-primary btn-md ml-1" onclick="window.location.href='register.html'" data-toggle="tooltip" data-placement="bottom" title="Click here to register">
+            Register
+        </button>
     </nav>
     <!-- BREADCRUMB -->
     <nav class="breadcrumb bg-light">
@@ -419,7 +463,7 @@
                             <div class="col-1"><i class="fas fa-map-marker"></i></div>
                             <div class="col-10">
                                 <h6 class="font-weight-bold mb-0">Address:</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>16 Turia Av. 41019, Seville</p>
                             </div>
                         </div>
                     </li>
@@ -428,7 +472,7 @@
                             <div class="col-1"><i class="far fa-envelope"></i></div>
                             <div class="col-10">
                                 <h6 class="font-weight-bold mb-0">Have any questions?</h6>
-                                <p><a href="#">Support@userthemes.com</a></p>
+                                <p><a href="#">support@electronics4all.com</a></p>
                             </div>
                         </div>
                     </li>
@@ -436,8 +480,8 @@
                         <div class="row">
                             <div class="col-1"><i class="fas fa-phone-volume"></i></div>
                             <div class="col-10">
-                                <h6 class="font-weight-bold mb-0">Address:</h6>
-                                <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
+                                <h6 class="font-weight-bold mb-0">Contact:</h6>
+                                <p><a href="#">+34 601 225 000</a></p>
                             </div>
                         </div>
                     </li>
@@ -450,7 +494,7 @@
                         <div class="row">
                             <div class="col-1"><i class="fab fa-twitter"></i></div>
                             <div class="col-10">
-                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <p class="mb-0"><a href="#">@electro </a> New content on Github!</p>
                                 <label>10 Mins Ago</label>
                             </div>
                         </div>
@@ -459,7 +503,7 @@
                         <div class="row">
                             <div class="col-1"><i class="fab fa-twitter"></i></div>
                             <div class="col-10">
-                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <p class="mb-0"><a href="#">@m&m's </a> New post on Facebook, don't miss it!</p>
                                 <label>10 Mins Ago</label>
                             </div>
                         </div>
@@ -468,7 +512,7 @@
                         <div class="row">
                             <div class="col-1"><i class="fab fa-twitter"></i></div>
                             <div class="col-10">
-                                <p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
+                                <p class="mb-0"><a href="#">@jslr </a> New tweet!</p>
                                 <label>10 Mins Ago</label>
                             </div>
                         </div>
@@ -479,16 +523,16 @@
                 <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                 <ul class="recent-post">
                     <li>
-                        <label class="mr-3">28 <br><span>APR</span></label>
-                        <span>Rendomised words which dont look eveable.</span>
+                        <label class="mr-3">18 <br><span>FEB</span></label>
+                        <span>We are so close to this trimester's end.</span>
                     </li>
                     <li>
-                        <label class="mr-3">29 <br><span>APR</span></label>
-                        <span>Rendomised words which dont look eveable.</span>
+                        <label class="mr-3">9 <br><span>FEB</span></label>
+                        <span>This site is looking good.</span>
                     </li>
                     <li>
-                        <label class="mr-3">30 <br><span>APR</span></label>
-                        <span>Rendomised words which dont look eveable.</span>
+                        <label class="mr-3">24 <br><span>JAN</span></label>
+                        <span>We are starting this shit!.</span>
                     </li>
                 </ul>
             </div>
