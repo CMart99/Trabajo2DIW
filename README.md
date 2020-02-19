@@ -83,20 +83,20 @@ Trabajo 2º Trimestre D.I.W
 * Se incluyen los siguientes componentes:
 
 * Breadcrumb :heavy_check_mark: > línea 127.
-* Botones :heavy_check_mark: > líneas 23, 68, 73, 108, 122, 445, 478 y 594.
+* Botones :heavy_check_mark: > líneas 23, 68, 73, 108, 122, 491 y 607.
 * Dropdown :heavy_check_mark: > línea 44.
 * Nav :heavy_check_mark: > línea 21.
 * NavBar :heavy_check_mark: > línea 21.
 * Badges :heavy_check_mark: > línea 60.
-* Alertas :heavy_check_mark: > línea 557.
+* Alertas :heavy_check_mark: > línea 608.
 * Jumbotron :heavy_check_mark: > línea 432.
-* Iconos soportados por bootstrap :heavy_check_mark: > línea 430 (Font Awesome).
-* Forms :heavy_check_mark: > líneas 66, 83 y 440.
+* Iconos soportados por bootstrap :heavy_check_mark: > línea 464 (Font Awesome).
+* Forms :heavy_check_mark: > líneas 66, 83 y 476.
 * Input Group :heavy_check_mark: > línea 575.
 * Validación de forms :heavy_check_mark: > línea 142.
 * Modal :heavy_check_mark: > línea 76.
 * Tooltip :heavy_check_mark: > líneas 73 y 122.
-* PopOver :heavy_check_mark: > línea 468.
+* PopOver :heavy_check_mark: > línea 481.
 * Pagination :heavy_check_mark:
 
 
