@@ -12,13 +12,13 @@
 
 
 
-    <title>Home - Electronics4All</title>
+    <title>Social - Electronics4All</title>
 </head>
 
 <body>
 
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Electronics4All</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,30 +26,48 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-home" onclick="window.location.href='index.html'"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping.html">
+                        Shop
+                    </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Social</a>
+                    <a class="nav-link" href="social.html">
+                        Social
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Other sites
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="shopping.html">Shop</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="register.html">Register</a>
+                        <a class="dropdown-item" href="aboutUs.html">About Us</a>
 
                     </div>
                 </li>
             </ul>
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-envelope-o">
+                            <span class="badge badge-info">11</span>
+                        </i> Messages
+                    </a>
+                </li>
+
+            </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 mr-5" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-
         <!-- LOGIN MODAL -->
 
         <button type="button" class="btn btn-primary btn-md ml-5 " data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="Click here to log in with your account" data-target="#ModalLoginForm">
@@ -80,8 +98,8 @@
                                 <div>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="remember"> Remember Me
-                                        </label>
+                                    <input type="checkbox" name="remember"> Remember Me
+                                </label>
                                     </div>
                                 </div>
                             </div>
@@ -101,10 +119,17 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-        <button type="button" onclick="window.location.href='register.html'" class="btn btn-primary btn-md ml-1" data-toggle="tooltip" data-placement="bottom" title="Click here to register">
+        <button type="button" class="btn btn-primary btn-md ml-1" onclick="window.location.href='register.html'" data-toggle="tooltip" data-placement="bottom" title="Click here to register">
             Register
         </button>
-
+    </nav>
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb bg-light">
+        <a class="breadcrumb-item" href="index.html">Home</a>
+        <a class="breadcrumb-item" href="products.html">Products</a>
+        <a class="breadcrumb-item" href="shopping.html">Shop</a>
+        <a class="breadcrumb-item active" href="social.html">Social</a>
+        <a class="breadcrumb-item" href="aboutUs.html">About Us</a>
     </nav>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -204,8 +229,7 @@
                         </div>
 
                         <div class="text">
-                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
-                                scripta ocurreret qui ad.</span>
+                            <span>Follow us on Google+ so you don't miss any of our new posts.</span>
                         </div>
 
                         <a href="#">Learn More</a>
@@ -224,7 +248,7 @@
                         </div>
 
                         <div class="text center">
-                            <span>Follow us on Github so you don't miss any of our new content.</span>
+                            <span>Follow out Github page so you don't miss any of our new content.</span>
                         </div>
 
                         <a href="#">Learn More</a>

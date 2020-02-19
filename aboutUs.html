@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Register - Electronics4All</title>
-
-    <link rel="stylesheet" href="assets/css/register.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <title>About Us - Electronics4All</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list-example" data-offset="20">
+
     <!-- NAV -->
     <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Electronics4All</a>
@@ -28,7 +25,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">
                         <i class="fa fa-home" onclick="window.location.href='index.html'"></i>
                     </a>
@@ -70,6 +67,60 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
+        <!-- LOGIN MODAL -->
+
+        <button type="button" class="btn btn-primary btn-md ml-5 " data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="Click here to log in with your account" data-target="#ModalLoginForm">
+            Login
+        </button>
+        <div id="ModalLoginForm" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" method="POST" action="">
+                            <input type="hidden" name="_token" value="">
+                            <div class="form-group">
+                                <label class="control-label">E-Mail Address</label>
+                                <div>
+                                    <input type="email" class="form-control input-lg" name="email" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <div>
+                                    <input type="password" class="form-control input-lg" name="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="remember"> Remember Me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <button type="submit" class="btn btn-success">Login</button>
+
+                                    <a class="btn btn-link" href="">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <button type="button" class="btn btn-primary btn-md ml-1" onclick="window.location.href='register.html'" data-toggle="tooltip" data-placement="bottom" title="Click here to register">
+            Register
+        </button>
     </nav>
     <!-- BREADCRUMB -->
     <nav class="breadcrumb bg-light">
@@ -77,137 +128,84 @@
         <a class="breadcrumb-item" href="products.html">Products</a>
         <a class="breadcrumb-item" href="shopping.html">Shop</a>
         <a class="breadcrumb-item" href="social.html">Social</a>
-        <a class="breadcrumb-item" href="aboutUs.html">About Us</a>
+        <a class="breadcrumb-item active" href="aboutUs.html">About Us</a>
     </nav>
 
-    <div class="container mt-2 mb-4">
-        <div class="row justify-content-md-center">
-            <div class="col-sm-4 border border-primary shadow rounded pt-2">
-                <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
-                <div class="col-sm-12">
-                    <form method="post" id="singnupFrom" onSubmit="return validation();">
-                        <div class="form-group">
-                            <label class="font-weight-bold">Email</label>
-                            <div class="input-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email">
-                                <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope"></i></button></div>
-                            </div>
-                        </div>
-                        <div id="next-form" class="collapse">
-                            <div class="form-group">
-                                <label class="font-weight-bold">User Name <small class="text-danger"><em>This will be
-                                            your login name!</em></small></label>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Choose your user name">
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold">Phone #</label>
-                                <input type="text" name="phone" id="phone" class="form-control" placeholder="(000)-(0000000)">
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold">Confirm Password</label>
-                                <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="***********">
-                                <em id="cp"></em>
-                            </div>
-                            <div class="form-group">
-                                <label><input type="checkbox" name="condition" id="condition"> I agree with the <a
-                                        href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="submit" value="Sign Up" class="btn btn-block btn-danger">
-                            </div>
-                            <div class="container">
-                                <h3>Upload a photo</h3>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Upload</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="file01">
-                                        <label class="custom-file-label" for="file01">Choose file</label>
-                                    </div>
-                                </div>
+    <!-- LIST GROUP -->
 
-                            </div>
+    <div class="row">
+        <div class="col-4">
+            <nav id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#content-javascript">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#content-css">Our History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#content-bootstrap">Our Founders</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-8">
+            <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
+                <h4 id="content-javascript">About Us</h4>
+                <p>
+                    Lorem fistrum benemeritaar está la cosa muy malar a peich pecador condemor se calle ustée. A peich ahorarr apetecan diodeno amatomaa está la cosa muy malar a gramenawer quietooor condemor hasta luego Lucas sexuarl. Caballo blanco caballo negroorl va usté
+                    muy cargadoo condemor por la gloria de mi madre sexuarl. Diodenoo no te digo trigo por no llamarte Rodrigor pupita va usté muy cargadoo ese hombree ese pedazo de benemeritaar. Tiene musho peligro se calle ustée no te digo trigo por
+                    no llamarte Rodrigor no puedor me cago en tus muelas amatomaa se calle ustée no te digo trigo por no llamarte Rodrigor pupita va usté muy cargadoo fistro. Papaar papaar apetecan qué dise usteer pupita va usté muy cargadoo apetecan
+                    a peich la caidita condemor.
+                </p>
+                <h4 id="content-css">Our History</h4>
+                <p>
+                    Lorem fistrum se calle ustée hasta luego Lucas a gramenawer quietooor la caidita fistro. La caidita a gramenawer hasta luego Lucas diodeno sexuarl fistro llevame al sircoo ahorarr ahorarr. No te digo trigo por no llamarte Rodrigor pupita benemeritaar
+                    ahorarr. Ese que llega pecador a gramenawer qué dise usteer la caidita caballo blanco caballo negroorl va usté muy cargadoo pecador va usté muy cargadoo quietooor. Condemor qué dise usteer condemor amatomaa a wan te va a hasé pupitaa
+                    de la pradera ese que llega torpedo. De la pradera te voy a borrar el cerito se calle ustée diodeno diodeno pupita. </p>
+                <h4 id="content-bootstrap">Our Founders</h4>
+                <p>
+                    Lorem fistrum va usté muy cargadoo llevame al sircoo jarl te va a hasé pupitaa condemor. Benemeritaar llevame al sircoo pecador a wan al ataquerl de la pradera ese hombree. No puedor ahorarr la caidita ahorarr de la pradera ese pedazo de a peich. Caballo
+                    blanco caballo negroorl ahorarr te va a hasé pupitaa a peich fistro benemeritaar. Me cago en tus muelas a peich sexuarl está la cosa muy malar tiene musho peligro pecador pupita a wan papaar papaar.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> &nbsp;
+
+
+    <!-- JUMBOTRON -->
+
+    <div class="jumbotron jumbotron-dark-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-2">
+                    <img class="img-responsive" src="https://i.imgur.com/dCsjjSs.png" />
+                </div>
+                <div class="col-lg-6">
+                    <p>Subscribe to know about our latest products!</p>
+                    <form>
+                        <div class="form-group">
+                            <script>
+                                $(document).ready(function() {
+                                    $(function() {
+                                        $("#emailInput").popover({
+                                            content: 'Please enter your email address',
+                                            trigger: 'focus',
+                                        });
+                                    });
+                                });
+                            </script>
+                            <input type="email" id="emailInput" class="form-control" placeholder="you@email.com">
                         </div>
-                        <!--/.next-form-->
                     </form>
+                    <button type="button" class="btn btn-primary btn-block">Sign Me Up</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        function emailCheck() {
-            if ($("#email").val() == "") {
-                $("#email").addClass('is-invalid');
-                return false;
-            } else {
-                var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
-                if (regMail.test($("#email").val()) == false) {
-                    $("#email").addClass('is-invalid');
-                    return false;
-                } else {
-                    $("#email").removeClass('is-invalid');
-                    $('#next-form').collapse('show');
-                }
-
-            }
-        }
-
-        function validation() {
-            if ($("#username, #phone, #password, #cpassword").val() == "") {
-                $("#username, #phone, #password, #cpassword").addClass('is-invalid');
-                return false;
-            } else {
-                $("#username, #phone, #password, #cpassword").removeClass('is-invalid');
-            }
-
-            if ($("#password").val() != $("#cpassword").val()) {
-                $("#cpassword").addClass('is-invalid');
-                $("#cp").html('<span class="text-danger">Password and confirm password not matched!</span>');
-                return false;
-            }
-        }
-        $(document).ready(function(e) {
-            $("#username").on("keyup", function() {
-                if ($("#username").val() == "") {
-                    $("#username").addClass('is-invalid');
-                    return false;
-                } else {
-                    $("#username").removeClass('is-invalid');
-                }
-            });
-            $("#phone").on("keyup", function() {
-                if ($("#phone").val() == "") {
-                    $("#phone").addClass('is-invalid');
-                    return false;
-                } else {
-                    $("#phone").removeClass('is-invalid');
-                }
-            });
-            $("#password").on("keyup", function() {
-                if ($("#password").val() == "") {
-                    $("#password").addClass('is-invalid');
-                    return false;
-                } else {
-                    $("#password").removeClass('is-invalid');
-                }
-            });
-            $("#cpassword").on("keyup", function() {
-                if ($("#cpassword").val() == "") {
-                    $("#cpassword").addClass('is-invalid');
-                    return false;
-                } else {
-                    $("#cpassword").removeClass('is-invalid');
-                }
-            });
-        });
-    </script>
 </body>
+
 
 <!-- Footer -->
 
@@ -336,6 +334,8 @@
         </div>
     </div>
 </section>
-</body>
+
+
+
 
 </html>
