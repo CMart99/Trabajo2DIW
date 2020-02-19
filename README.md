@@ -74,8 +74,9 @@ Trabajo 2º Trimestre D.I.W
 * Badges :heavy_check_mark: > línea 60.
 * Alertas :heavy_check_mark: > línea 371.
 * Card :heavy_check_mark: > líneas 146, 165, 184, 203, 222 y 242.
-* Tooltip :heavy_check_mark: > Sobre botones de login y register
+* Tooltip :heavy_check_mark: > líneas 73 y 122
 * Pagination :heavy_check_mark:
+
 
 # Página de compra (shopping.html):
 
@@ -98,7 +99,6 @@ Trabajo 2º Trimestre D.I.W
 * PopOver :heavy_check_mark: > línea 468.
 * Pagination :heavy_check_mark:
 
-* Se incluyen las siguientes funcionalidades:
 
 # Página de registro (register.html)
 
@@ -136,5 +136,4 @@ Trabajo 2º Trimestre D.I.W
 * Scrollspy :heavy_check_mark: > línea 147.
 * Iconos soportados por bootstrap. :heavy_check_mark: > línea 173 (Font Awesome).
 * Pagination :heavy_check_mark:
-
 
