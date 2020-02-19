@@ -102,17 +102,16 @@ Trabajo 2º Trimestre D.I.W
 
 # Página de registro (register.html)
 
-* Collapse :heavy_check_mark:
-* Breadcrumb :heavy_check_mark:
+* Collapse :heavy_check_mark: > línea 155.
+* Breadcrumb :heavy_check_mark: > línea 75,
 * Botones :heavy_check_mark: > líneas 25, 70, 92 y 319.
-* Grupo de botones
-* Dropdown :heavy_check_mark:
+* Dropdown :heavy_check_mark: > línea 46 en adelante.
 * Nav :heavy_check_mark: > línea 23.
 * NavBar :heavy_check_mark: > línea 23.
 * Badges :heavy_check_mark: > línea 62.
 * Alertas :heavy_check_mark: > línea 316.
 * Validación de forms :heavy_check_mark: > línea 142 en adelante.
-* Input Group :heavy_check_mark: > línea 90.
+* Input Group :heavy_check_mark: > línea 124.
 * Iconos soportados por bootstrap :heavy_check_mark: > línea 13 (Font Awesome).
 * Pagination :heavy_check_mark:
 
