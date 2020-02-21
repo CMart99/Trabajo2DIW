@@ -35,7 +35,7 @@ Trabajo 2º Trimestre D.I.W
 * Modal :heavy_check_mark: > línea 75.
 * Tooltip :heavy_check_mark: > línea 72.
 * PopOver :heavy_check_mark: > línea 479.
-* Media Object :heavy_check_mark: > línea 611.
+* Media Object :heavy_check_mark: > línea 458.
 * Iconos soportados por bootstrap. :heavy_check_mark: > línea 462 (Font Awesome).
 * Pagination :heavy_check_mark:
 
@@ -57,6 +57,7 @@ Trabajo 2º Trimestre D.I.W
 * PopOver :heavy_check_mark: > línea 719.
 * Iconos soportados por bootstrap :heavy_check_mark: > línea 704 (Font Awesome).
 * Progress :heavy_check_mark: > líneas 288, 313, 337 y 361.
+* Media Object :heavy_check_mark: > línea 700.
 * Tooltip :heavy_check_mark: > líneas 72 y 121.
 * Pagination :heavy_check_mark:
 
@@ -82,35 +83,36 @@ Trabajo 2º Trimestre D.I.W
 * Se incluyen los siguientes componentes:
 
 * Breadcrumb :heavy_check_mark: > línea 127.
-* Botones :heavy_check_mark: > líneas 23, 68, 73, 108, 122, 491 y 607.
+* Botones :heavy_check_mark: > líneas 23, 68, 73, 108, 122, 445, 478 y 594.
 * Dropdown :heavy_check_mark: > línea 44.
 * Nav :heavy_check_mark: > línea 21.
 * NavBar :heavy_check_mark: > línea 21.
 * Badges :heavy_check_mark: > línea 60.
-* Alertas :heavy_check_mark: > línea 608.
+* Alertas :heavy_check_mark: > línea 557.
 * Jumbotron :heavy_check_mark: > línea 432.
-* Iconos soportados por bootstrap :heavy_check_mark: > línea 464 (Font Awesome).
-* Forms :heavy_check_mark: > líneas 66, 83 y 476.
+* Iconos soportados por bootstrap :heavy_check_mark: > línea 430 (Font Awesome).
+* Forms :heavy_check_mark: > líneas 66, 83 y 440.
 * Input Group :heavy_check_mark: > línea 575.
 * Validación de forms :heavy_check_mark: > línea 142.
 * Modal :heavy_check_mark: > línea 76.
 * Tooltip :heavy_check_mark: > líneas 73 y 122.
-* PopOver :heavy_check_mark: > línea 481.
+* PopOver :heavy_check_mark: > línea 468.
 * Pagination :heavy_check_mark:
 
 
 # Página de registro (register.html)
 
-* Collapse :heavy_check_mark: > línea 155.
-* Breadcrumb :heavy_check_mark: > línea 75,
+* Collapse :heavy_check_mark:
+* Breadcrumb :heavy_check_mark:
 * Botones :heavy_check_mark: > líneas 25, 70, 92 y 319.
-* Dropdown :heavy_check_mark: > línea 46 en adelante.
+* Grupo de botones
+* Dropdown :heavy_check_mark:
 * Nav :heavy_check_mark: > línea 23.
 * NavBar :heavy_check_mark: > línea 23.
 * Badges :heavy_check_mark: > línea 62.
 * Alertas :heavy_check_mark: > línea 316.
 * Validación de forms :heavy_check_mark: > línea 142 en adelante.
-* Input Group :heavy_check_mark: > línea 124.
+* Input Group :heavy_check_mark: > línea 90.
 * Iconos soportados por bootstrap :heavy_check_mark: > línea 13 (Font Awesome).
 * Pagination :heavy_check_mark:
 
