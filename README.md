@@ -35,7 +35,6 @@ Trabajo 2º Trimestre D.I.W
 * Modal :heavy_check_mark: > línea 75.
 * Tooltip :heavy_check_mark: > línea 72.
 * PopOver :heavy_check_mark: > línea 479.
-* Media Object :heavy_check_mark: > línea 458.
 * Iconos soportados por bootstrap. :heavy_check_mark: > línea 462 (Font Awesome).
 * Pagination :heavy_check_mark:
 
